@@ -288,7 +288,8 @@ header.sticky{
 	background: #121212;
 	justify-content: center;
 	align-items: center;
-	gap: 2.5rem;
+	gap: 2rem;
+
 }
 .contact-text h4{
 	color: #fff;
@@ -317,16 +318,16 @@ form textarea{
 	padding: 14px;
 	background: none;
 	color: #fff;
-	border-color: #333333;
-	border-radius: 5px;
+	border-color: rgb(61, 59, 59);
 	outline: none;
 	font-size: 15px;
 	border-radius: 8px;
 	margin-bottom: 10px;
+	box-shadow: none;
 }
 .contact-form textarea{
 	resize: none;
-	height: 240px;
+	height: 200px;
 }
 .contact-form .submit{
 	display: inline-block;
@@ -335,6 +336,7 @@ form textarea{
 	color: #fff;
 	width: 160px;
 	transition: all .45s ease;
+	border: none;
 }
 .contact-form .submit:hover{
 	transform: scale(1.1);
@@ -378,6 +380,7 @@ form textarea{
 	.end{
 		padding: 15px 3%;
 	}
+	
 }
 
 @media (max-width: 1100px){
@@ -426,7 +429,7 @@ form textarea{
 		left: 0;
 		display: flex;
 		flex-direction: column;
-		background: var(--bg-color);
+		background: #121212;
 		text-align: left;
 		transition: all .45s ease;
 	}
@@ -435,13 +438,13 @@ form textarea{
 		margin: 17px;
 		font-size: 20px;
 		transition: all .45s ease;
-		color: var(--text-color);
+		color: #fff;
 	}
 	.nav-list a:hover{
-		color: var(--main-color);
+		color: darkred;
 	}
 	.nav-list a.active{
-		color: var(--text-color);
+		color: darkred;
 	}
 	.nav-list.open{
 		top: 100%;
