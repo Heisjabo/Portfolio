@@ -126,13 +126,18 @@ header.sticky{
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 1rem;
-	background-color: #121212;
+	background-color: #161616;
+	
+
 }
 .about-img img{
 	max-width: 530px;
 	height: auto;
 	width: 100%;
 	
+}
+.about-text{
+	margin-bottom: 90px;
 }
 .about-text h2{
 	font-size: 32px;
@@ -167,6 +172,18 @@ header.sticky{
 .main-text h2{
 	font-size: 35px;
 	line-height: 1;
+}
+.about-text button{
+	display: inline-block;
+	padding: 8px 18px;
+	background: darkred;
+	color:#fff;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 8px;
+	transition: all .45s ease;
+	border: none;
+	cursor: pointer;
 }
 .services-content{
 	display: grid;
@@ -347,9 +364,8 @@ form textarea{
 	padding: 20px 15%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	gap: 2rem;
-	background: var(--bg-color);
+	background: rgb(15, 15, 15);
 	align-items: center;
 	justify-content: center;
 }
@@ -363,6 +379,20 @@ form textarea{
 	border-radius: 8px;
 	font-size: 15px;
 	color: darkred;
+}
+.end .icons i{
+	align-items: center;
+	justify-content: space-between;
+	
+	border-radius: 50px;
+	border: 2px solid darkred;
+	padding: 10px;
+	color: #fff;
+	cursor: pointer;
+}
+.end .icons i:hover{
+	background-color: darkred;
+
 }
 
 @media (max-width: 1480px){
