@@ -15,3 +15,59 @@ window.onscroll = () => {
 	menu.classList.remove('bx-x');
 	navlist.classList.remove('open');
 };
+
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const form = document.getElementById('form');
+const error = document.getElementById('error');
+
+form.addEventListener('submit', function(e){
+	e.preventDefault();
+	validateForm();
+});
+
+
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+
+
+function validateForm(){
+
+	if(name.value == ""){
+		document.getElementById('error1').innerHTML = "please enter your name";
+	} else if(name.value !== ""){
+		document.getElementById('error1').innerHTML = "";
+	}
+	if(email.value == ""){
+		document.getElementById('error2').innerHTML = "please enter your email";
+	}
+	else if (email.value.match(validRegex)) {
+		  document.getElementById('error2').innerHTML = "";
+	  } else {
+		document.getElementById('error2').innerHTML = "please enter a valid email";
+	  }
+
+	if(message.value == ""){
+		document.getElementById('error3').innerHTML = "please type a message";
+	
+	} else if(message.value !== "" && name.value !== "" && email.value.match(validRegex)){
+		document.getElementById('error3').innerHTML = "";
+		alert('message sent successfully');
+		form.reset();
+	}	else {
+		return false;
+	}
+}
+
+function sendMessage(){
+	if(validateForm() === true){
+		alert('message sent successfully');
+		form.reset();
+		console.log('function returns true');
+	} else {
+		return false;
+	}
+}
+
+

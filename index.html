@@ -32,6 +32,7 @@
             <div class="bx bx-menu" id="menu-icon">
                 
             </div>
+			
     </header>
 
     <!--Home section-->
@@ -189,11 +190,21 @@
 		</div>
 
 		<div class="contact-form">
-			<form action="">
-				<input type="name" placeholder="Your Name" required>
-				<input type="email" placeholder="Your Email Address" required>
-				<textarea name="" id="" cols="35" rows="10" placeholder="Your Message" required></textarea>
-				<input type="submit" value="Send Message" class="submit" required>
+			<form action="" id="form" >
+				<div class="input-el">
+				<input type="name" placeholder="Your Name" id="name">
+				<p id="error1" class="error"></p>
+			</div>
+			<div class="input-el">
+				<input type="text" placeholder="Your Email Address" id="email">
+				<p id="error2" class="error"></p>
+			</div>
+			<div class="input-el">
+				<textarea name="message" id="message" cols="35" rows="10" placeholder="Your Message"></textarea>
+				<p id="error3" class="error"></p>
+				</div>
+				
+				<input type="submit" value="Send Message" class="submit" >
 			</form>
 		</div>
 	</section>
