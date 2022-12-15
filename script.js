@@ -60,14 +60,6 @@ function validateForm(){
 	}
 }
 
-function sendMessage(){
-	if(validateForm() === true){
-		alert('message sent successfully');
-		form.reset();
-		console.log('function returns true');
-	} else {
-		return false;
-	}
-}
+
 
 
