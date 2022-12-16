@@ -436,6 +436,9 @@ form textarea{
 	.home{
 		height: 87vh;
 	}
+	.home img{
+		display: none;
+	}
 }
 
 @media (max-width: 920px){
@@ -455,6 +458,9 @@ form textarea{
 	}
 	.contact{
 		grid-template-columns: 1fr;
+	}
+	.home img{
+		display: none;
 	}
 }
 
@@ -488,5 +494,8 @@ form textarea{
 	}
 	.nav-list.open{
 		top: 100%;
+	}
+	.home img{
+		display: none;
 	}
 }

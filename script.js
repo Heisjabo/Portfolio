@@ -15,7 +15,16 @@ window.onscroll = () => {
 	menu.classList.remove('bx-x');
 	navlist.classList.remove('open');
 };
+// navbar activeness 
+const nav = document.querySelector('.nav-list').querySelectorAll('a');
+console.log(nav);
 
+nav.forEach(element => {
+	element.addEventListener("click", function(){
+		nav.forEach(a => a.classList.remove("active"));
+		this.classList.add("active");
+	})
+});
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
