@@ -45,6 +45,7 @@ header {
     margin: 0 25px;
     transition: all .45s ease;
 }
+
 .nav-list a:hover {
     color: darkred;
 
