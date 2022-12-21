@@ -477,6 +477,10 @@ form textarea{
 @media (max-width: 840px){
 	#menu-icon{
 		display: block;
+		margin-right: 0.5rem;
+	}
+	.logo{
+		margin-left: 0.5rem;
 	}
 	.nav-list{
 		position: absolute;
@@ -504,6 +508,22 @@ form textarea{
 	}
 	.nav-list.open{
 		top: 100%;
+	}
+	.home img{
+		display: none;
+	}
+	.home-text h1{
+		font-size: 34px;
+	}
+	.home-text h3{
+		font-size: 30px;
+		margin-left: 1.5rem;
+	}
+	.home-text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 	}
 	.home img{
 		display: none;
