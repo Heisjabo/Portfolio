@@ -59,8 +59,9 @@ function validateForm(){
 
 	if(message.value == ""){
 		document.getElementById('error3').innerHTML = "please type a message";
+    }
 	
-	} else if(message.value !== "" && name.value !== "" && email.value.match(validRegex)){
+	else if(message.value !== "" && name.value !== "" && email.value.match(validRegex)){
 		document.getElementById('error3').innerHTML = "";
 		alert('message sent successfully');
 		form.reset();
@@ -68,6 +69,7 @@ function validateForm(){
 		return false;
 	}
 }
+
 
 
 

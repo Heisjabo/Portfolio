@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 body {
-    background: #0f0f0f;
+    background: #191919;
     color: #eeeeee;
 }
 
@@ -54,7 +54,6 @@ header {
     color: #cf0a0a;
 	border-bottom: 2px solid #cf0a0a;
 	padding-bottom: 3px;
-	
 
 }
 #menu-icon{
@@ -130,7 +129,7 @@ header.sticky{
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 1rem;
-	background-color: #161616;
+	background-color: #191919;
 	
 
 }
@@ -141,11 +140,12 @@ header.sticky{
 	
 }
 .about-text{
-	margin-bottom: 90px;
+	margin-bottom: 70px;
 }
 .about-text h2{
 	font-size: 32px;
 	line-height: 1;
+	margin-top: 1rem;
 }
 .about-text h4{
 	font-size: 24px;
@@ -473,11 +473,29 @@ form textarea{
 	.home img{
 		display: none;
 	}
+	.home-text h1{
+		font-size: 34px;
+	}
+	.home-text h3{
+		font-size: 24px;
+		
+		text-align: center;
+	}
+	.home-text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 840px){
 	#menu-icon{
 		display: block;
+		margin-right: 0.5rem;
+	}
+	.logo{
+		margin-left: 0.5rem;
 	}
 	.nav-list{
 		position: absolute;
@@ -509,4 +527,18 @@ form textarea{
 	.home img{
 		display: none;
 	}
+	.home-text h1{
+		font-size: 34px;
+	}
+	.home-text h3{
+		font-size: 30px;
+		margin-left: 1.5rem;
+	}
+	.home-text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
 }
