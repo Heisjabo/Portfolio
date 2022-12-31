@@ -16,7 +16,9 @@ window.onscroll = () => {
 	navlist.classList.remove('open');
 };
 // navbar activeness 
-const nav = document.querySelector('.nav-list').querySelectorAll('a');
+
+(function activeNav(){
+	const nav = document.querySelector('.nav-list').querySelectorAll('a');
 console.log(nav);
 
 nav.forEach(element => {
@@ -25,6 +27,10 @@ nav.forEach(element => {
 		this.classList.add("active");
 	})
 });
+
+})();
+
+
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
